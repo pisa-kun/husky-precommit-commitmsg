@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@eslint/js": "^9.9.1",
     "@typescript-eslint/eslint-plugin": "^8.3.0",
     "@typescript-eslint/parser": "^8.3.0",
@@ -14,10 +16,16 @@
   },
   "scripts": {
     "prepare": "husky",
-    "prettier": "prettier --write *.ts"
+    "prettier": "prettier --write *.ts",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "lint-staged": {
-    "*.{ts, tsx}": "eslint --fix",
-    "*": "prettier --write"
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
   }
 }
