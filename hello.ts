@@ -4,5 +4,5 @@ const f = (a: number): number => a * 2;
 
 //   console.log(f(3,4))
 // "prettier --write *.ts"の実行でスペースがなくなる
-console.log(f(3, 4));
-console.log(f(3, 2));
+console.log(f(3));
+console.log(f(4));
