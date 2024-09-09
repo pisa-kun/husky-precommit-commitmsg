@@ -166,6 +166,17 @@ https://yutorii.com/posts/create-github-app-token-action#block-e571ead512de45d78
 
 **Repository secrets**にCREATE_APP_TOKEN_APP_IDとCREATE_APP_TOKEN_PRIVATE_KEYを設定する
 
+#### release-please failed: Error creating Pull Request: Resource not accessible by integration が発生した場合
+
+該当するリポジトリのSettings > Actions > General > Workflow permissionsを
+Read repository contents permission から Read and write permissions に変更すると解決できました
+
+PR作成のチェックボックスもチェックを入れる必要がある
+`Allow GitHub Actions to create and approve pull requests` 
+
+https://zenn.dev/tatsugon/articles/github-actions-permission-error
+
+https://zenn.dev/miharun/articles/16444d2a4eabc3
 
 ## 参考文献
 
