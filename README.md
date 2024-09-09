@@ -62,10 +62,15 @@ package.jsonを修正する
   "devDependencies": {
     ...
   },
-  **"lint-staged": {
-    "*.{ts, tsx}": "eslint --fix",
-    "*": "prettier --write"
-  }**
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
 }
 ```
 
@@ -155,7 +160,6 @@ pnpm run commitmsg
 ### nextjsのセットアップ
 
 > pnpm dlx create-next-app sample-nextjs
-
 ### github actionsの設定
 
 https://yutorii.com/posts/create-github-app-token-action#block-e571ead512de45d78038db8b5dddc714
