@@ -21,6 +21,4 @@ jobs:
                 private-key: ${{ secrets.CREATE_APP_TOKEN_PRIVATE_KEY }}
             - uses: googleapis/release-please-action@v4
               with:
-                max_attempts: 1
-                retry_interval: 10
                 token: ${{ steps.app-token.outputs.token }}
