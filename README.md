@@ -174,6 +174,12 @@ Read repository contents permission から Read and write permissions に変更�
 PR作成のチェックボックスもチェックを入れる必要がある
 `Allow GitHub Actions to create and approve pull requests` 
 
+```yaml
+permissions:
+  contents: write
+  pull-requests: write
+```
+
 https://zenn.dev/tatsugon/articles/github-actions-permission-error
 
 https://zenn.dev/miharun/articles/16444d2a4eabc3
