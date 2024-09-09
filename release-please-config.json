@@ -1,0 +1,11 @@
+{
+  "packages": {
+    "sample-nextjs": {
+      "release-type": "node",
+      "component": "app1"
+    }
+  },
+  "release-type": "node",
+  "tag-separator": "/",
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
+}

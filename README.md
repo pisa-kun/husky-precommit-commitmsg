@@ -152,6 +152,13 @@ pnpm run commitmsg
 
 `pre-commit` ではなく、 `commit-msg` でフォルダ作るのがミソ
 
+### nextjsのセットアップ
+
+> pnpm dlx create-next-app sample-nextjs
+
+
+
+
 ## 参考文献
 
 [【2024/01最新】husky + lint-staged でコミット前にlintを強制する方法](https://zenn.dev/risu729/articles/latest-husky-lint-staged)
