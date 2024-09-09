@@ -156,7 +156,11 @@ pnpm run commitmsg
 
 > pnpm dlx create-next-app sample-nextjs
 
+### github actionsの設定
 
+https://yutorii.com/posts/create-github-app-token-action#block-e571ead512de45d78038db8b5dddc714
+
+**Repository secrets**にCREATE_APP_TOKEN_APP_IDとCREATE_APP_TOKEN_PRIVATE_KEYを設定する
 
 
 ## 参考文献
